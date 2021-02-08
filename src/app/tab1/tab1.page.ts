@@ -52,7 +52,7 @@ getColor(el:number,max:number)
   return (Math.abs(el-max)<0.01) ? "green" : "";
 }
 }
-abstract class Figure3D {
+export abstract class Figure3D {
   naz:string;
   h:number;
   pl:number;
@@ -82,7 +82,7 @@ abstract class Figure3D {
   }
 
 }
-class Piramid extends Figure3D
+export class Piramid extends Figure3D
 {
 
   constructor(public naz:string,public h:number,public parametr:number)
